@@ -1,0 +1,25 @@
+{
+  "name": "types-exito",
+  "version": "1.0.2-beta.4",
+  "description": "Typing of éxito typescript projects",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grupo-exito-ecommerce/types-exito.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Types",
+    "exito",
+    "vtex"
+  ],
+  "author": "grupo-exito-ecommerce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grupo-exito-ecommerce/types-exito/issues"
+  },
+  "homepage": "https://github.com/grupo-exito-ecommerce/types-exito#readme",
+  "dependencies": {}
+}
