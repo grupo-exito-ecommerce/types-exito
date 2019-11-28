@@ -1,4 +1,5 @@
 /// <reference types="react" />
+import { Fields } from '../../shared';
 interface customDataAllies {
     fields: Fields;
 }

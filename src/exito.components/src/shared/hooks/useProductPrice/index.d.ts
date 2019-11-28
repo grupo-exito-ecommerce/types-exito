@@ -1,6 +1,7 @@
 import ApolloClient from 'apollo-client';
-export declare const useProductPrice: (client: ApolloClient<any>, productContextToUse?: UseProduct | undefined) => {
-    client: any;
+import { UseProduct, BenefitsQuery, BestTeaser } from '../../index';
+export declare const useProductPrice: (client: ApolloClient<any>, productContext: UseProduct | null) => {
+    client: ApolloClient<any>;
     productContext: UseProduct;
     getListPrice: () => number | null;
     getSellingPrice: () => number | null;
@@ -8,10 +9,26 @@ export declare const useProductPrice: (client: ApolloClient<any>, productContext
     getBaseDiscount: () => number | null;
     getAlliesDiscount: () => number | null;
     getAlliesDiscountPrice: () => number | null;
-    sellers: UseSellers;
+    sellers: import("../..").UseSellers;
     clases?: string | undefined;
     getBenefits: () => Promise<BenefitsQuery[]>;
     getBestTeaser: () => BestTeaser | null;
     parsePrice: (price: number) => number | null;
-    currencyOptions: CurrencyOptions;
+    currencyOptions: import("../..").CurrencyOptions;
 } | null;
+export declare const useProductHook: (client: ApolloClient<any>, productContext: UseProduct) => {
+    client: ApolloClient<any>;
+    productContext: UseProduct;
+    getListPrice: () => number | null;
+    getSellingPrice: () => number | null;
+    getBadgeDiscount: () => number | null;
+    getBaseDiscount: () => number | null;
+    getAlliesDiscount: () => number | null;
+    getAlliesDiscountPrice: () => number | null;
+    sellers: import("../..").UseSellers;
+    clases?: string | undefined;
+    getBenefits: () => Promise<BenefitsQuery[]>;
+    getBestTeaser: () => BestTeaser | null;
+    parsePrice: (price: number) => number | null;
+    currencyOptions: import("../..").CurrencyOptions;
+};

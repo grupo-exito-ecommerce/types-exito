@@ -7,15 +7,18 @@ export declare const customThemeExito: Theme;
 export declare const customThemeCarulla: Theme;
 export declare const useStyles: (props?: any) => Record<"input" | "placeholder" | "root" | "paper" | "valueContainer" | "noOptionsMessage" | "singleValue", string>;
 export declare const generateClassName: import("jss").GenerateId;
-export declare function NoOptionsMessage(props: NoticeProps<OptionType>): JSX.Element;
-export declare namespace NoOptionsMessage {
+declare function NoOptionsMessage(props: NoticeProps<OptionType>): JSX.Element;
+declare namespace NoOptionsMessage {
     var propTypes: any;
 }
-export declare function inputComponent({ inputRef, ...props }: InputComponentProps): JSX.Element;
-export declare namespace inputComponent {
+export default NoOptionsMessage;
+declare function inputComponent({ inputRef, ...props }: InputComponentProps): JSX.Element;
+declare namespace inputComponent {
     var propTypes: any;
 }
-export declare function ValueContainer(props: ValueContainerProps<OptionType>): JSX.Element;
-export declare namespace ValueContainer {
+export default inputComponent;
+declare function ValueContainer(props: ValueContainerProps<OptionType>): JSX.Element;
+declare namespace ValueContainer {
     var propTypes: any;
 }
+export default ValueContainer;

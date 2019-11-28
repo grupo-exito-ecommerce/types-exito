@@ -1,6 +1,6 @@
 {
   "name": "types-exito",
-  "version": "1.0.2-beta.4",
+  "version": "1.0.3",
   "description": "Typing of éxito typescript projects",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

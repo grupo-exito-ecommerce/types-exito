@@ -1,4 +1,5 @@
 import { Fields, UseOffer, UseProduct, UseSellers } from '../../models';
+import { NormalizeProduct, UseSellerData } from '../../index';
 /**
  * Hook to get the normalize seller information on product detail
  */

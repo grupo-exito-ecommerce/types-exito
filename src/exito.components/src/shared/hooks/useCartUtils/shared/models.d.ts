@@ -1,7 +1,7 @@
 export interface ItemCart {
-    id: number;
+    id: string;
     quantity: number;
-    seller: string;
+    seller: string | undefined;
     index: number;
 }
 interface baseItemsToCartVariables {
