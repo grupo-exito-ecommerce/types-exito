@@ -16,6 +16,17 @@ export interface ProductPumValuesProps {
     properties: any[];
     client: ApolloClient<any>;
 }
+export interface CustomPriceProps {
+    name: any;
+    classes: string;
+    value: number;
+    logo: string;
+    description: any;
+    action: string;
+    component?: any;
+    componentModal?: any;
+    attachment?: any;
+}
 export interface AlliesDiscountProps {
     classes: string;
     benefitsInformation: Promise<BenefitsQuery[]>;

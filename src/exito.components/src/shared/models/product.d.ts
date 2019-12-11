@@ -37,7 +37,7 @@ export interface UseSellers {
 export interface DiscountHighlight {
     name: string;
 }
-export interface FullSellers {
+export interface FullSellers extends Seller {
     AvailableQuantity: number;
     CacheVersionUsedToCallCheckout: string;
     Installments: any[];
@@ -53,6 +53,7 @@ export interface FullSellers {
     sellerId: string;
     sellerName: string;
     commertialOffer: CommertialOffer;
+    isInternational?: boolean;
 }
 export interface ProductProperties {
     name: string;

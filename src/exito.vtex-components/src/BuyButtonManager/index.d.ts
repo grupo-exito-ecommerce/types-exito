@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React from 'react';
 import { BuyButtonWrapperProps } from '../shared';
-declare const BuyButtonManager: FC<BuyButtonWrapperProps>;
-export default BuyButtonManager;
+declare const _default: React.ComponentClass<BuyButtonWrapperProps, any>;
+export default _default;

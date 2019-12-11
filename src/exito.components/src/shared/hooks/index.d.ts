@@ -8,3 +8,5 @@ export * from './useHabeasData';
 export * from './useProductPrice';
 export * from './useCartUtils';
 export * from './useScrollPosition';
+export * from './useMKPI';
+export * from './useGraphql';

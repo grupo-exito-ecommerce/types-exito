@@ -1,11 +1,11 @@
-import { FC, ReactElement } from 'react';
-import { State } from 'vtex.product-summary-context';
+import { FC } from 'react';
 import { ButtonType, StylesConfig } from '../shared';
 interface BuyButtonProps {
     buttonType: ButtonType;
-    children: ReactElement;
-    productContext: State;
+    productContext: any;
     container: StylesConfig;
+    shouldAddToCart?: Boolean;
+    onAddFinish: () => void;
 }
 export declare const BuyButtonToProductDetail: FC<{
     container: StylesConfig;

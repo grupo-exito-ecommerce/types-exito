@@ -1,10 +1,8 @@
 import React from 'react';
-import { State } from 'vtex.product-summary-context';
 import { BuyButtonConfig } from '../shared';
-import { UseProduct } from 'types-exito/src/exito.components/src/shared';
 interface ProductQuantityProps {
     handleDeleteProduct: (destroy?: boolean) => void;
-    productContext: State | UseProduct | null;
+    productContext: any;
     seller: Seller;
     selectedQuantityPerSeller: number;
     buyButtonConfig: BuyButtonConfig;

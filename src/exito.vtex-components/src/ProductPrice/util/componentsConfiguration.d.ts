@@ -1,17 +1,19 @@
 /// <reference types="react" />
+import { ProductPricesComponent, DistributionComponents, ProductPumValuesProps, OtherSellingPricesProps, AlliesDiscountProps, ProductPriceValuesProps, PriceProps } from '../../shared';
 import { ComponentsClasses } from 'types-exito/src/exito.components/src/shared';
-import { AlliesDiscountProps, DistributionComponents, OtherSellingPricesProps, PriceProps, ProductPricesComponent, ProductPriceValuesProps, ProductPumValuesProps } from '../../shared';
 export declare const PRICE_COMPONENT_TYPE: {
     ListPrice: import("react").MemoExoticComponent<(props: ProductPriceValuesProps) => JSX.Element>;
     SellingPrices: import("react").MemoExoticComponent<(props: ProductPriceValuesProps) => JSX.Element>;
-    AlliedDiscount: import("react").MemoExoticComponent<(props: AlliesDiscountProps) => JSX.Element | null>;
+    AlliedDiscount: import("react").MemoExoticComponent<(props: AlliesDiscountProps) => JSX.Element>;
     OtherSellingPrice: import("react").MemoExoticComponent<(props: OtherSellingPricesProps) => JSX.Element>;
     ProductPum: (props: ProductPumValuesProps) => JSX.Element;
+    CustomPrice: import("react").MemoExoticComponent<(props: import("../../shared").CustomPriceProps) => JSX.Element>;
     Case: (props: {
         value: string;
     }) => JSX.Element;
 };
 export declare const DEFAULT_CLASSES_COMPONENTS: ComponentsClasses;
+declare type PriceType = 'ListPrice' | 'SellingPrices' | 'AlliedDiscount' | 'OtherSellingPrice' | 'ProductPum' | 'CustomPrice' | 'Case';
 /**
  * Return the styles to use in the components
  * @param props
@@ -31,8 +33,10 @@ export declare const listPricesConfiguration: (listPrice: number, classesCompone
  * @param props
  * @param classesComponents
  */
-export declare const sellingPricesConfiguration: (sellingPrice: number, classesComponents: ComponentsClasses) => {
-    component: import("react").MemoExoticComponent<(props: ProductPriceValuesProps) => JSX.Element>;
+export declare const sellingPricesConfiguration: (sellingPrice: number, classesComponents: ComponentsClasses, component?: PriceType, props?: any) => {
+    component: import("react").MemoExoticComponent<(props: ProductPriceValuesProps) => JSX.Element> | import("react").MemoExoticComponent<(props: AlliesDiscountProps) => JSX.Element> | import("react").MemoExoticComponent<(props: OtherSellingPricesProps) => JSX.Element> | ((props: ProductPumValuesProps) => JSX.Element) | import("react").MemoExoticComponent<(props: ProductPriceValuesProps) => JSX.Element> | import("react").MemoExoticComponent<(props: import("../../shared").CustomPriceProps) => JSX.Element> | ((props: {
+        value: string;
+    }) => JSX.Element);
     props: ProductPriceValuesProps;
 };
 /**
@@ -41,7 +45,7 @@ export declare const sellingPricesConfiguration: (sellingPrice: number, classesC
  * @param classesComponents
  */
 export declare const alliesPricesConfiguration: (props: ProductPricesComponent, classesComponents: ComponentsClasses) => {
-    component: import("react").MemoExoticComponent<(props: AlliesDiscountProps) => JSX.Element | null>;
+    component: import("react").MemoExoticComponent<(props: AlliesDiscountProps) => JSX.Element>;
     props: AlliesDiscountProps;
 };
 /**
@@ -76,4 +80,5 @@ export declare const caseConfiguration: (value: string) => {
         classes: string;
     };
 };
-export declare const renderElements: (elements: DistributionComponents[] | null) => JSX.Element[] | null;
+export declare const renderElements: (elements: DistributionComponents[]) => JSX.Element[];
+export {};

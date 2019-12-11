@@ -4,7 +4,7 @@ declare const _default: React.MemoExoticComponent<{
     (props: {
         sku: any;
         productProperties: ProductProperties[];
-    }): JSX.Element | null;
+    }): JSX.Element;
     defaultProps: {
         sku: string;
         productProperties: string;

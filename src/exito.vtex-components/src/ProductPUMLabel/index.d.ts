@@ -2,9 +2,9 @@ import React from 'react';
 import ApolloClient from 'apollo-client';
 declare const _default: React.MemoExoticComponent<{
     (props: {
-        sku?: ISelectedItemVtex | undefined;
-        client?: ApolloClient<any> | undefined;
-    }): JSX.Element | null;
+        sku?: ISelectedItemVtex;
+        client?: ApolloClient<any>;
+    }): JSX.Element;
     defaultProps: {
         sku: string;
     };

@@ -1,5 +1,3 @@
-import { ReactElement } from 'react';
-import { State } from 'vtex.product-summary-context';
 export interface IconModel {
     styles: object;
     className: string;
@@ -32,8 +30,7 @@ export declare enum ButtonType {
 export interface BuyButtonWrapperProps {
     buttonType: ButtonType;
     categoriesOpenCoverageModal: string[];
-    children: ReactElement[];
-    productContext: State;
+    productContext: any;
     hideBuyButtonOnCategories: string[] | undefined;
     buyButtonConfig: BuyButtonConfig | null;
 }

@@ -6,4 +6,4 @@ import { ProductPricesComponent } from '../../shared';
  * @description Scenario 2: The product have the same discount, so much of allies and commercial
  * @description Scenario 3: The product have the commercial discount mayor of the discount of allies
  */
-export declare const validateScenarioOne: (props: ProductPricesComponent) => true | null;
+export declare const validateScenarioOne: (props: ProductPricesComponent) => boolean;
