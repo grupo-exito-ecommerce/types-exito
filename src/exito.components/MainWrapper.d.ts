@@ -1,2 +1,2 @@
-import { MainWrapper } from './src/components/MainWrapper';
+import MainWrapper from './src/components/MainWrapper';
 export default MainWrapper;

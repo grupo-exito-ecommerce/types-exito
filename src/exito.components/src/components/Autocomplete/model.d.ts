@@ -15,6 +15,7 @@ export interface AutoCompleteProps {
     noOptionsMessage?: (obj: {
         inputValue: string;
     }) => string | null;
+    type?: string;
 }
 export interface OptionType {
     label: string;

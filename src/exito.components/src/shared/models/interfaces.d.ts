@@ -38,7 +38,7 @@ export interface ProductPricesProps {
     getAlliesDiscountPrice: () => number | null;
     sellers: UseSellers;
     clases?: string;
-    getBenefits: () => Promise<BenefitsQuery[]>;
+    getBenefits: () => Promise<AdditionalAlliesInfo[]>;
     getBestTeaser: () => BestTeaser | null;
     parsePrice: (price: number) => number | null;
     currencyOptions: CurrencyOptions;
@@ -49,9 +49,16 @@ export interface CurrencyOptions {
     minimumFractionDigits: number;
     maximumFractionDigits: number;
 }
-export interface BenefitsQuery {
+export interface AdditionalAlliesInfo {
     fields: any[];
     id: string;
+}
+export interface AdditionalAlliesInfoFormatted {
+    alliedName: string;
+    description: string;
+    id: string;
+    logo: string;
+    name: string;
 }
 /**
  * UseProduct

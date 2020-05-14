@@ -3,6 +3,8 @@ import './global.css';
 interface ServicesLinkItemLink {
     url: string;
     title: string;
+    image: string;
+    height: string;
 }
 interface ServicesBarProps {
     width: string;
@@ -39,6 +41,15 @@ declare const ServicesBar: {
                         url: {
                             type: string;
                             title: string;
+                        };
+                        image: {
+                            title: string;
+                            type: string;
+                        };
+                        height: {
+                            type: string;
+                            title: string;
+                            default: string;
                         };
                     };
                 };

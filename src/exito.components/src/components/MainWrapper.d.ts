@@ -1,10 +1,17 @@
 import { FC } from 'react';
-interface MainContextProps {
+import { WithApolloClient } from 'react-apollo';
+import { AdditionalAlliesInfoFormatted } from '../shared';
+export interface MainContextProps {
     account: string;
     pageResolution: string;
+    additionalAlliesInfo: AdditionalAlliesInfoFormatted[];
+    clusters?: string;
 }
 export declare const useMainWrapperContext: () => MainContextProps | null;
-export declare const MainWrapper: FC<{
+export declare const MainWrapper: FC<WithApolloClient<{
     account: string;
-}>;
-export {};
+}>>;
+declare const _default: import("react").ComponentClass<{
+    account: string;
+}, any>;
+export default _default;

@@ -1,5 +1,5 @@
 import ApolloClient from 'apollo-client';
-import { UseProduct, BenefitsQuery, BestTeaser } from '../../index';
+import { UseProduct, AdditionalAlliesInfo, BestTeaser } from '../../index';
 export declare const useProductPrice: (client: ApolloClient<any>, productContext: UseProduct | null) => {
     client: ApolloClient<any>;
     productContext: UseProduct;
@@ -11,7 +11,7 @@ export declare const useProductPrice: (client: ApolloClient<any>, productContext
     getAlliesDiscountPrice: () => number | null;
     sellers: import("../..").UseSellers;
     clases?: string | undefined;
-    getBenefits: () => Promise<BenefitsQuery[]>;
+    getBenefits: () => Promise<AdditionalAlliesInfo[]>;
     getBestTeaser: () => BestTeaser | null;
     parsePrice: (price: number) => number | null;
     currencyOptions: import("../..").CurrencyOptions;
@@ -27,7 +27,7 @@ export declare const useProductHook: (client: ApolloClient<any>, productContext:
     getAlliesDiscountPrice: () => number | null;
     sellers: import("../..").UseSellers;
     clases?: string | undefined;
-    getBenefits: () => Promise<BenefitsQuery[]>;
+    getBenefits: () => Promise<AdditionalAlliesInfo[]>;
     getBestTeaser: () => BestTeaser | null;
     parsePrice: (price: number) => number | null;
     currencyOptions: import("../..").CurrencyOptions;
