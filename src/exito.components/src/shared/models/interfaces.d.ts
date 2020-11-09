@@ -60,6 +60,16 @@ export interface AdditionalAlliesInfoFormatted {
     logo: string;
     name: string;
 }
+export interface AdditionalFlagsInfoFormatted {
+    id: string;
+    name: string;
+    flagText: string;
+    backgroundColor: string;
+    textColor: string;
+    logo: string;
+    position: string;
+    borderColor: string;
+  }
 /**
  * UseProduct
  */
