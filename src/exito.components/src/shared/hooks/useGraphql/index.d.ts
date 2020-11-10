@@ -10,7 +10,7 @@ interface baseClientQueryOptions extends baseOptions {
     query: any;
 }
 export declare const useGraphql: (client: ApolloClient<any>) => {
-    mutation: (options: baseClientMutationOptions) => Promise<any>;
-    query: (options: baseClientQueryOptions) => Promise<any>;
+    mutation: (options: baseClientMutationOptions) => Promise<any | null>;
+    query: (options: baseClientQueryOptions) => Promise<any | null>;
 };
 export {};

@@ -15,6 +15,7 @@ export declare const useProductPrice: (client: ApolloClient<any>, productContext
     getBestTeaser: () => BestTeaser | null;
     parsePrice: (price: number) => number | null;
     currencyOptions: import("../..").CurrencyOptions;
+    bestMyDiscount?: number | undefined;
 } | null;
 export declare const useProductHook: (client: ApolloClient<any>, productContext: UseProduct) => {
     client: ApolloClient<any>;
@@ -31,4 +32,5 @@ export declare const useProductHook: (client: ApolloClient<any>, productContext:
     getBestTeaser: () => BestTeaser | null;
     parsePrice: (price: number) => number | null;
     currencyOptions: import("../..").CurrencyOptions;
+    bestMyDiscount?: number | undefined;
 };

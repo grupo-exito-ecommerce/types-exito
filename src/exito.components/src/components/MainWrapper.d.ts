@@ -6,7 +6,7 @@ export interface MainContextProps {
     pageResolution: string;
     additionalAlliesInfo: AdditionalAlliesInfoFormatted[];
     additionalFlagsInfo: AdditionalFlagsInfoFormatted[];
-    clusters?: string;
+    clusters?: string[];
 }
 export declare const useMainWrapperContext: () => MainContextProps | null;
 export declare const MainWrapper: FC<WithApolloClient<{

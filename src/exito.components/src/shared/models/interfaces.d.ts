@@ -2,6 +2,10 @@ import ApolloClient from 'apollo-client';
 import { ReactNode } from 'react';
 import { LogisticsInfo } from './logisticData';
 import { FullSellers, UseProduct, UseSellers, Teaser } from './product';
+export interface IClusters {
+    id: string;
+    name: string;
+}
 export interface ComponentsClasses {
     alliesDiscount: string;
     sellingPrice: string;
@@ -42,6 +46,7 @@ export interface ProductPricesProps {
     getBestTeaser: () => BestTeaser | null;
     parsePrice: (price: number) => number | null;
     currencyOptions: CurrencyOptions;
+    bestMyDiscount?: number;
 }
 export interface CurrencyOptions {
     style: string;
@@ -69,7 +74,7 @@ export interface AdditionalFlagsInfoFormatted {
     logo: string;
     position: string;
     borderColor: string;
-  }
+}
 /**
  * UseProduct
  */

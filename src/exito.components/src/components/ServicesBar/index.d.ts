@@ -5,6 +5,7 @@ interface ServicesLinkItemLink {
     title: string;
     image: string;
     height: string;
+    heightMobil: string;
 }
 interface ServicesBarProps {
     width: string;
@@ -47,6 +48,11 @@ declare const ServicesBar: {
                             type: string;
                         };
                         height: {
+                            type: string;
+                            title: string;
+                            default: string;
+                        };
+                        heightMobil: {
                             type: string;
                             title: string;
                             default: string;

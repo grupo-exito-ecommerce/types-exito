@@ -1,4 +1,5 @@
 export * from './useAdditionalAlliesInfo';
+export * from './useAdditionalFlagsInfo';
 export * from './useCartUtils';
 export * from './useDiscount';
 export * from './useForm';
