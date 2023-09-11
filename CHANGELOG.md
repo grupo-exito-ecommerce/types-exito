@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.6] - 2020-02-18
 ### Changed
 
-- Update types from exito.icons
+- Update types from exito.icons  
 
 ## [1.0.4] - 2019-12-11
 ### Changed
