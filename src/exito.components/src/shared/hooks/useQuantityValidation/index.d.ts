@@ -11,6 +11,8 @@ export interface Quantity {
 /**
   * useQuantityValidation retorna una sola restricción de compara a cada producto
 */
-export declare const useQuantityValidation: (productCategories: string[]) => {
-    validaton: () => any;
+export declare const useQuantityValidation: (productCategories: string[], orderForm: string[], itemId: string) => {
+  validaton: () => any;
+  giftBoxInOrder: () => null;
+  gftCardInOrder: () => boolean | number;
 };
